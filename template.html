@@ -1,0 +1,293 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Template</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+        /* estilo do Mod Book */
+        /*#2E6DAB;*/
+
+        .book_content .no-overflow{
+          overflow: visible !important;
+        }
+        .bookBody .card-header [data-toggle="collapse"]:after
+        {
+          content: "▸";
+          float: right;
+          font-size: 45px;
+          line-height: 0px;
+          margin-top: -10px;
+
+          -webkit-transform: rotate(90deg);
+          -moz-transform:    rotate(90deg);
+          -ms-transform:     rotate(90deg);
+          -o-transform:      rotate(90deg);
+          transform:         rotate(90deg);
+        }
+
+        .bookBody .card-header [data-toggle="collapse"].collapsed:after
+        {
+          -webkit-transform: rotate(180deg);
+          -moz-transform:    rotate(180deg);
+          -ms-transform:     rotate(180deg);
+          -o-transform:      rotate(180deg);
+          transform:         rotate(180deg);
+        }
+
+        .bookBody{
+        margin: 10%;text-align: justify;
+        }
+
+        .bookBody h1{
+          margin-top: 2rem;
+        }
+
+        .bookBody .card {
+          margin-bottom: .5rem;
+        }
+
+        .bookBody .card-header {
+          padding: .5rem 1rem;
+        }
+
+        .bookCollapseButton{
+          width: 100%;
+          text-align: left;
+          text-decoration: none;
+          font-size: 20px;
+          color: black;
+        }
+
+        .bookCollapseButton:focus, .bookCollapseButton:hover, .bookCollapseButton:active, .bookCollapseButton:visited{
+          text-decoration: none !important;
+          color: black !important;
+        }
+
+        .bookBody p, .bookBody ul{
+          margin: 1rem 0;
+        }
+
+        .bookBodyImg, .bookBodyImgLegenda{
+           text-align: center;
+        }
+
+        .bookBodyImgLegenda{
+          margin-top: -10px !important;
+          font-size: 0.75rem;
+          font-weight: bold;
+        }
+
+        .bookFooterLink{
+          text-align: center; font-size: smaller;
+        }
+
+        .bookBackground1{
+          background-color: #9B182B;
+        }
+
+        .bookBackground2{
+          background-color: #762866;
+        }
+
+        .bookBackground3{
+          background-color: #4C277D;
+        }
+
+        .bookBackground4{
+          background-color: #2E6DAB;
+        }
+
+        .bookBackground5{
+          background-color: #2FAB8D;
+        }
+
+        .bookBackground6{
+          background-color: #D87124;
+        }
+
+        .bookColor1, .bookColorSeta1:after{
+          color: #9B182B;
+        }
+
+        .bookColor2, .bookColorSeta2:after{
+          color: #762866;
+        }
+
+        .bookColor3, .bookColorSeta3:after{
+          color: #4C277D;
+        }
+
+        .bookColor4, .bookColorSeta4:after{
+          color: #2E6DAB;
+        }
+
+        .bookColor5, .bookColorSeta5:after{
+          color: #2FAB8D;
+        }
+
+        .bookColor6, .bookColorSeta6:after{
+          color: #D87124;
+        }
+
+        .bookHeader{
+          height: 0.25rem;
+        }
+
+        .bookFooterLeft{
+        vertical-align: middle; color: white;  float: left; width: 6%; height: 20px;
+        }
+
+        .bookFooterRight{
+        vertical-align: middle; color: white; border-top-right-radius: 25px;float: right; width: 92%;height: 20px;
+        }
+
+        .bookDestaquesTitulo{
+          vertical-align: middle;
+          color: white;
+          margin-top: 1rem;
+        }
+
+        .bookDestaquesCorpo{
+          color: black;
+          background-color: #E2E2E2;
+        }
+
+        .bookDestaquesCorpotexto{
+          padding-right: 3rem;
+        }
+
+        .bookDestaquesRodapeLinha{
+          height: .25rem;
+        }
+
+        .bookDestaquesTitulo, .bookDestaquesCorpo{
+          margin-bottom: .5rem;
+        }
+
+        @media print {
+          .bookBody .collapse {
+            display: block !important;
+            height: auto !important;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <br/><br/><br/><br/>
+    <h1>Título 1</h1>
+    <div class="bookHeader bookBackground1">.</div>
+    <div class="bookBody">
+    
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lacus eu leo mollis eleifend. Suspendisse et ante mollis, cursus urna ut, sagittis nibh. Pellentesque at vulputate lorem. Sed ut rutrum libero. Vestibulum tempor massa a finibus pulvinar. Nam lorem eros, pellentesque at mi eu, viverra sodales enim. Donec eu urna id turpis dictum luctus id non orci. Phasellus leo augue, finibus sit amet lobortis ac, blandit at felis. Maecenas nisl lacus, placerat sit amet dui maximus, aliquet pulvinar mi. In tincidunt at massa et malesuada. Vivamus id risus quis lacus faucibus fringilla at ut augue. </p>
+
+      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/453960346/modulo2-img2.jpg" alt="Acesso restrito" class="img-responsive atto_image_button_text-bottom" width="300" height="210"></p>
+      <p class="bookBodyImgLegenda">Figura 1. Exemplo de legenda</p>
+
+      <h4>Título 2</h4>
+      <p>Listas Não Ordenadas</p>
+      <ul>
+        <li>Item 1;</li>
+        <li>Item 2.</li>
+      </ul>
+
+      <p>Listas Ordenadas</p>
+      <ol>
+        <li>Item 1;</li>
+        <li>Item 2.</li>
+      </ol>
+
+      <h4>Accordion</h4>
+
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link bookCollapseButton bookColorSeta1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Tópico 1
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lacus eu leo mollis eleifend. Suspendisse et ante mollis, cursus urna ut, sagittis nibh. Pellentesque at vulputate lorem. Sed ut rutrum libero. Vestibulum tempor massa a finibus pulvinar. Nam lorem eros, pellentesque at mi eu, viverra sodales enim. Donec eu urna id turpis dictum luctus id non orci. Phasellus leo augue, finibus sit amet lobortis ac, blandit at felis. Maecenas nisl lacus, placerat sit amet dui maximus, aliquet pulvinar mi. In tincidunt at massa et malesuada. Vivamus id risus quis lacus faucibus fringilla at ut augue.</p>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed bookCollapseButton bookColorSeta1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tópico 2
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lacus eu leo mollis eleifend. Suspendisse et ante mollis, cursus urna ut, sagittis nibh. Pellentesque at vulputate lorem. Sed ut rutrum libero. Vestibulum tempor massa a finibus pulvinar. Nam lorem eros, pellentesque at mi eu, viverra sodales enim. Donec eu urna id turpis dictum luctus id non orci. Phasellus leo augue, finibus sit amet lobortis ac, blandit at felis. Maecenas nisl lacus, placerat sit amet dui maximus, aliquet pulvinar mi. In tincidunt at massa et malesuada. Vivamus id risus quis lacus faucibus fringilla at ut augue.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed bookCollapseButton bookColorSeta1" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tópico 3
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lacus eu leo mollis eleifend. Suspendisse et ante mollis, cursus urna ut, sagittis nibh. Pellentesque at vulputate lorem. Sed ut rutrum libero. Vestibulum tempor massa a finibus pulvinar. Nam lorem eros, pellentesque at mi eu, viverra sodales enim. Donec eu urna id turpis dictum luctus id non orci. Phasellus leo augue, finibus sit amet lobortis ac, blandit at felis. Maecenas nisl lacus, placerat sit amet dui maximus, aliquet pulvinar mi. In tincidunt at massa et malesuada. Vivamus id risus quis lacus faucibus fringilla at ut augue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bookDestaques">
+        <div class="col-md-2 span2"></div>
+        <div class="col-md-10 span10">
+          <div class="row bookDestaquesTitulo bookBackground1">
+            <div class="col-md-12 span12">VÍDEO</div>
+          </div>
+          <div class="row bookDestaquesCorpo">
+            <div class="col-md-2 span2"><img src="imgs/video1.png" alt="Ícone vídeo"></div>
+            <div class="col-md-10 span10 bookDestaquesCorpotexto">
+              <p>Ao lado do alerta de novas mensagens, no menu superior, é possível configurar como serão recebidas as notificações de novas mensagens, na página de preferências de mensagens, mostrada na Figura 2.5. Esta página pode ser acessada através do menu do usuário ou ícone de uma pequena engrenagem, dentro do menu de mensagens.</p>
+            </div>
+          </div>
+          <div class="row bookDestaquesRodape">
+            <div class="col-md-1 span1"></div>
+            <div class="col-md-11 span11 bookDestaquesRodapeLinha bookBackground1"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bookFooterLeft bookBackground1"></div>
+    <div class="bookFooterRight bookBackground1">
+    <p class="bookFooterLink">ava.ufpe.br/nead</p>
+    </div>
+
+    <br/><br/><br/><br/>
+    <div class="bookHeader bookBackground2">.</div>
+    <div class="bookBody">
+        <p>Tempate vazio.</p>
+    </div>
+    <div class="bookFooterLeft bookBackground2"></div>
+    <div class="bookFooterRight bookBackground2">
+    <p class="bookFooterLink">ava.ufpe.br/nead</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

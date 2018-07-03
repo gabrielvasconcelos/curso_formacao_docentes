@@ -1,0 +1,306 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Módulo 5</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+        /* estilo do Mod Book */
+        /*#2E6DAB;*/
+        .bookBody .card-header [data-toggle="collapse"]:after
+        {
+          content: "▸";
+          float: right;
+          font-size: 45px;
+          line-height: 0px;
+          margin-top: -10px;
+
+          -webkit-transform: rotate(90deg);
+          -moz-transform:    rotate(90deg);
+          -ms-transform:     rotate(90deg);
+          -o-transform:      rotate(90deg);
+          transform:         rotate(90deg);
+        }
+
+        .bookBody .card-header [data-toggle="collapse"].collapsed:after
+        {
+          -webkit-transform: rotate(180deg);
+          -moz-transform:    rotate(180deg);
+          -ms-transform:     rotate(180deg);
+          -o-transform:      rotate(180deg);
+          transform:         rotate(180deg);
+        }
+
+        .bookBody{
+        margin: 10%;text-align: justify;
+        }
+
+        .bookBody h1{
+          margin-top: 2rem;
+        }
+
+        .bookBody .card {
+          margin-bottom: .5rem;
+        }
+
+        .bookBody .card-header {
+          padding: .5rem 1rem;
+        }
+
+        .bookCollapseButton{
+          width: 100%;
+          text-align: left;
+          text-decoration: none;
+          font-size: 20px;
+          color: black;
+        }
+
+        .bookCollapseButton:focus, .bookCollapseButton:hover, .bookCollapseButton:active, .bookCollapseButton:visited{
+          text-decoration: none !important;
+          color: black !important;
+        }
+
+        .bookBody p, .bookBody ul{
+          margin: 1rem 0;
+        }
+
+        .bookBodyImg, .bookBodyImgLegenda{
+           text-align: center;
+        }
+
+        .bookBodyImgLegenda{
+          margin-top: -10px !important;
+          font-size: 0.75rem;
+          font-weight: bold;
+        }
+
+        .bookFooterLink{
+          text-align: center; font-size: smaller;
+        }
+
+        .bookBackground1{
+          background-color: #9B182B;
+        }
+
+        .bookBackground2{
+          background-color: #762866;
+        }
+
+        .bookBackground3{
+          background-color: #4C277D;
+        }
+
+        .bookBackground4{
+          background-color: #2E6DAB;
+        }
+
+        .bookBackground5{
+          background-color: #2FAB8D;
+        }
+
+        .bookBackground6{
+          background-color: #D87124;
+        }
+
+        .bookColor1, .bookColorSeta1:after{
+          color: #9B182B;
+        }
+
+        .bookColor2, .bookColorSeta2:after{
+          color: #762866;
+        }
+
+        .bookColor3, .bookColorSeta3:after{
+          color: #4C277D;
+        }
+
+        .bookColor4, .bookColorSeta4:after{
+          color: #2E6DAB;
+        }
+
+        .bookColor5, .bookColorSeta5:after{
+          color: #2FAB8D;
+        }
+
+        .bookColor6, .bookColorSeta6:after{
+          color: #D87124;
+        }
+
+        .bookHeader{
+          height: 0.25rem;
+        }
+
+        .bookFooterLeft{
+        vertical-align: middle; color: white;  float: left; width: 6%; height: 20px;
+        }
+
+        .bookFooterRight{
+        vertical-align: middle; color: white; border-top-right-radius: 25px;float: right; width: 92%;height: 20px;
+        }
+
+        .bookDestaquesTitulo{
+          vertical-align: middle;
+          color: white;
+          margin-top: 1rem;
+        }
+
+        .bookDestaquesCorpo{
+          color: black;
+          background-color: #E2E2E2;
+        }
+
+        .bookDestaquesCorpotexto{
+          padding-right: 3rem;
+        }
+
+        .bookDestaquesRodapeLinha{
+          height: .25rem;
+        }
+
+        .bookDestaquesTitulo, .bookDestaquesCorpo{
+          margin-bottom: .5rem;
+        }
+
+        @media print {
+          .bookBody .collapse {
+            display: block !important;
+            height: auto !important;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <br/><br/><br/><br/>
+    <h1>Mensagens</h1>
+    <div class="bookHeader bookBackground5">.</div>
+    <div class="bookBody">
+      
+      <p>A Figura 2.2 ilustra o menu de mensagens expandido. Ao clicar no ícone do balão de mensagem, será exibida uma tela com a lista de novas mensagens (à esquerda) e com as opções de:</p>
+      <ol>
+        <li>enviar uma nova mensagem;</li>
+        <li>marcar todas como lidas;</li>
+        <li>configurar preferências;</li>
+        <li>para ver todas as mensagens.</li>
+      </ol>
+      <p class="bookBodyImg"><img src="https://docs.moodle.org/33/en/images_en/9/91/NewMessagingFeatures.png" alt="opções de mensagem" width="400" height="197"></p>
+      <p class="bookBodyImgLegenda">Figura 2.2: Menu de mensagens do usuário</p>
+
+      <h4>Enviando mensagens</h4>
+      <p>Existem 3 caminhos básicos para se enviar mensagens no Moodle:</p>
+      <ol>
+        <li>Clicando no link 'Nova mensagem' no menu de Mensagem expandido (ilustrado na Figura 2.2) e depois buscando um usuário ou curso;</li>
+        <li>Clicando no link Mensagens no menu do usuário;</li>
+        <li>Clicando no nome ou imagem de um usuário em um curso, em seguida 
+        clicando no botão "Mensagem". Por exemplo, na lista de participantes ou 
+        em tópicos dos fóruns.</li>
+      </ol>
+
+      <p>Ao escrever mensagens, perceba que o tamanho da caixa de digitação da mensagem aumentará à medida que se escreve. Para iniciar uma nova linha, é preciso pressionar Shift + Enter. (Ao pressionar a tecla "Enter" apenas, a mensagem pode ser enviada).</p>
+
+      <p>Clicando em uma imagem ou nome de usuário você também terá a opção de adicioná-lo à sua lista de contatos. Você poderá encontrar os contatos adicionados facilmente, como mostra a Figura 2.3 (1). Na mesma tela, é possível excluir pessoas da lista de contatos, Figura 2.3 (2).</p>
+
+      <p class="bookBodyImg"><img src="https://docs.moodle.org/33/en/images_en/5/5c/ContactMessaging.png" alt="contatos" width="600" height="333"></p>
+      <p class="bookBodyImgLegenda">Figura 2.3: Adicionando contatos</p>
+      
+      <h4>Apagar mensagens</h4>
+
+      <p>Como pode ser visto na Figura 2.4, no módulo de envio de mensagens, as mensagens também podem ser excluídas através do link "Editar" (1), selecionando uma ou mais mensagens e, em seguida, clicando no botão "Excluir mensagens selecionadas" (2).</p>
+
+      <p>Observe que apenas serão excluídas as mensagens trocadas com uma pessoa, em específico.</p>
+
+      <p>Outra opção para se utilizar com cuidado é "Deletar todas", disponível no canto superior esquerdo do menu de mensagem (de uma determinada pessoa). Não é possível desfazer a exclusão de mensagens no Moodle.</p>
+
+      <p class="bookBodyImg"><img src="https://docs.moodle.org/33/en/images_en/0/0f/DeletingMessages.png" alt="deletar mensagens" width="300" height="316"></p>
+      <p class="bookBodyImgLegenda">Figura 2.4: Logado - Apagando mensagens</p>
+
+      <h4>Recebendo mensagens</h4>
+
+      <p>Ao lado do alerta de novas mensagens, no menu superior, é possível configurar como serão recebidas as notificações de novas mensagens, na página de preferências de mensagens, mostrada na Figura 2.5. Esta página pode ser acessada através do menu do usuário ou ícone de uma pequena engrenagem, dentro do menu de mensagens.</p>
+
+      <p>Se o site estiver configurado com o aplicativo móvel, é possível permitir que novos alertas de mensagens sejam enviados para o seu celular.</p>
+
+      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/brokenfile.php#/1033/user/draft/343854088/2/2/preferencias-mensagens.png" alt="notificações" width="600" height="239"></p>
+      <p class="bookBodyImgLegenda">Figura 2.5: página de preferências de mensagens</p>
+
+      <h4>Enviando uma mensagem aos participantes selecionados de um curso.</h4>
+      <p>Um professor pode enviar uma mensagem aos participantes do curso da seguinte forma:</p>
+      <ol>
+        <li>Acesso à página Participantes;</li>
+        <li>Seleção dos participantes da lista (ou com o botão "Selecionar tudo");</li>
+        <li>Escolha da opção "Adicionar / enviar mensagem" no menu "Com usuários selecionados ...".</li>
+        <li>Digitação da mensagem e clique no botão "Visualizar".</li>
+        <li>Estando tudo certo com a mensagem, clicar no botão "Enviar".</li>
+      </ol>
+
+      <div class="row booDestaques">
+        <div class="col-md-2 span2"></div>
+        <div class="col-md-10 span10">
+          <div class="row bookDestaquesTitulo bookBackground5">
+            <div class="col-md-12 span12">VÍDEO</div>
+          </div>
+          <div class="row bookDestaquesCorpo">
+            <div class="col-md-2 span2"><img src="imgs/video5.png" alt="Ícone vídeo"></div>
+            <div class="col-md-10 span10 bookDestaquesCorpotexto">
+              <p>Ao lado do alerta de novas mensagens, no menu superior, é possível configurar como serão recebidas as notificações de novas mensagens, na página de preferências de mensagens, mostrada na Figura 2.5. Esta página pode ser acessada através do menu do usuário ou ícone de uma pequena engrenagem, dentro do menu de mensagens.</p>
+            </div>
+          </div>
+          <div class="row bookDestaquesRodape">
+            <div class="col-md-1 span1"></div>
+            <div class="col-md-11 span11 bookDestaquesRodapeLinha bookBackground5"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bookFooterLeft bookBackground5"></div>
+    <div class="bookFooterRight bookBackground5">
+    <p class="bookFooterLink">ava.ufpe.br/nead</p>
+    </div>
+
+    <br/><br/><br/><br/>
+    <div class="bookHeader bookBackground5">.</div>
+    <div class="bookBody">
+      <p>As notificações alertam os professores e estudantes sobre eventos no Moodle, como novas postagens  do fórum, envios que necessitam de avaliação, entre outros. Novas notificações ficarão em destaque com um número no menu de notificações na barra superior, exibida na Figura 3.1:</p>
+
+      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/brokenfile.php#/1033/user/draft/801238142/3/3/menu-notificacao.png" alt="notificação" width="255" height="38"></p>
+      <p class="bookBodyImgLegenda">Figura 3.1:</p>
+
+      <p>Ao clicar no ícone do sino, serão exibidas as novas notificações. Como ilustra a Figura 3.2, também serão mostradas as opções de: (1) marcar todas como lidas; (2) configurar preferências; e (3) visualizar todas as notificações.</p>
+
+      <p class="bookBodyImg"><img src="https://docs.moodle.org/33/en/images_en/8/8f/NewNotificationsFeatures.png" alt="nova notificação" width="400" height="183"></p>
+      <p class="bookBodyImgLegenda">Figura 3.2: menu de notificações expandido</p>
+
+      <p>Nessa tela, clicando em "Exibir notificação completa", a notificação será exibida em uma lista completa, de modo que um clique na notificação levará à localização no Moodle onde o evento aconteceu, neste exemplo, à tela da tarefa de envio.</p>
+
+      <h4>Recebendo notificações</h4>
+      <ul>
+        <li>Ao lado do alerta no menu de notificações, os usuários podem 
+        configurar como eles serão notificados sobre novos eventos utilizando a 
+        página de preferências, exibida na Figura 3.3, e que pode ser acessada 
+        através do menu do usuário ou do ícone de uma pequena engrenagem no menu
+         de notificações.</li>
+        <li>As opções visíveis dependem das configurações do site. Por exemplo, 
+        se o site estiver configurado com o aplicativo móvel, é possível 
+        habilitar que novos alertas sejam enviados para o celular.</li>
+        <li>Também é possível desabilitar as notificações por aqui.</li>
+      </ul>
+      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/brokenfile.php#/1033/user/draft/801238142/3/3/notificacoes-preferencias.png" alt="Opções de notificação" width="650" height="519"></p>
+      <p class="bookBodyImgLegenda">Figura 3.3:</p>
+
+    </div>
+    <div class="bookFooterLeft bookBackground5"></div>
+    <div class="bookFooterRight bookBackground5">
+    <p class="bookFooterLink">ava.ufpe.br/nead</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
