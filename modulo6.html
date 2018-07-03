@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/style.css" >
   </head>
   <body>
@@ -244,9 +246,9 @@
     </div>
     -->
 
-    <!--
+ 
     <br/><br/><br/><br/>
-    <h1>Criando um curso</h1>
+    <h1>Configurando um curso/disciplina</h1>
     <div class="bookHeader bookBackground2">.</div>
     <div class="bookBody">
       
@@ -259,7 +261,7 @@
           <div class="row bookDestaquesCorpo">
             <div class="col-md-2 span2"><img src="imgs/alerta2.png" alt="Ícone vídeo"></div>
             <div class="col-md-10 span10 bookDestaquesCorpotexto">
-              <p>Por padrão, <b>um professor não pode adicionar um novo curso</b> no Moodle. Para adicionar um novo curso é necessário ter papel de <i>Administrador</i>, <i>Criador de Cursos</i> ou <i>Gerente</i>. Entretanto, é possível que a permissão de criar cursos seja concedida pelo administrador do Moodle para os professores, sob caráter de excessão.</p>
+              <p>Por padrão, <b>um professor não pode adicionar um novo curso</b> no Moodle. Para adicionar um novo curso é necessário ter papel de <i>Administrador</i>, <i>Criador de Cursos</i> ou <i>Gerente</i>. Entretanto, é possível, para professores, editar algumas configurações do curso/disciplina.</p>
             </div>
           </div>
           <div class="row bookDestaquesRodape">
@@ -269,13 +271,12 @@
         </div>
       </div>
 
-      <p>Caso tenha permissão, ao acessar o Moodle com a sua conta, vá até o bloco <i>Administração do site</i>, localizado na lateral esquerda da página. Clique na aba <i>Cursos</i>, depois na opção <i>Gerenciar cursos e categorias</i>. Para adicionar um curso siga os seguintes passos: <br></p>
-      <ul>
-        <li>Clique na categoria a qual você quer que seu curso pertença;</li>
-        <li>Clique no link <i>Criar novo curso</i>.</li>
-      </ul>
+      <p>Ao acessar a sala virtual, clique na <i>engrenagem</i>, <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Configurações do Curso" aria-label="Configurações do Curso"></i>, localizada próximo a sua foto no menu superior, veja Figura 1. Depois, escolha na opção <i>Editar configurações</i>. 
 
-      <p>O formulário de criação de criação de curso será exibido. Este formulário é composto pelas seguinte seções: Geral, Descrição do Curso, Formato do curso, Aparência, Arquivos e uploads, Acompanhamento de conclusão, Grupos, Renomear papel e Marcadores. Estas seções serão descritas abaixo, clique no tópico para exibir o texto:</p>
+      <p class="bookBodyImg"><img src="./imgs/modulo6/editar_curso.png" alt="Configurações do Curso" class="img-responsive atto_image_button_middle" width="300" height="182"></p>
+      <p class="bookBodyImgLegenda">Figura 1. Configurações do Curso.</p> 
+
+      <p>O formulário de edição do curso será exibido. Este formulário é composto pelas seguinte seções: Geral, Descrição, Formato do curso, Aparência, Arquivos e uploads, Acompanhamento de conclusão, Grupos, Renomear papel e Marcadores. Estas seções serão descritas abaixo, clique no tópico para exibir o texto:</p>
 
       <div id="accordion">
         <div class="card">
@@ -288,27 +289,20 @@
           </div>
           <div id="collapseOneCurso" class="collapse show" aria-labelledby="headingOneCurso" data-parent="#accordion">
             <div class="card-body">
-              <p>Na seção Geral, teremos alguns campos, veja Figura 1, que devem ser obrigatoriamente preenchidos:</p>
+              <p>Na seção Geral, teremos alguns campos, veja Figura 2, que não podem ser alterados, pois seguem um padrão organizacional da UFPE, são eles:</p>
               <ul>
-                <li>Nome completo do curso: o nome completo do curso será apresentado na lista de cursos e no topo de cada página do curso.</li>
-                <li>Nome breve do curso. o nome breve deve ser de fácil associação, e pode ser usado no assunto de mensagens enviadas por e-mail.</li>
+                <li>Nome completo do curso: é apresentado na lista de cursos e no topo de cada página do curso.</li>
+                <li>Nome breve do curso: é um identificador que segue um padrão adotado pela UFPE.</li>
+                <li>Número de identificação do curso: é usado apenas nos processos de comunicação com sistemas externos.</li>
               </ul>
 
-              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-8-300x182.png" alt="Seção geral do formulário de criação de curso" class="img-responsive atto_image_button_middle" width="300" height="182"></p>
-              <p class="bookBodyImgLegenda">Figura 1. Seção geral do formulário de criação de curso.</p> 
-              
-              <p>Selecione a categoria em que deseja inserir o curso. Escolha a categoria
-               mais adequada ao seu curso, para que assim os alunos possam 
-              identificá-la com facilidade. Ou você pode selecionar a categoria em que
-               criou para este curso em específico.</p>
+              <p class="bookBodyImg"><img src="./imgs/modulo6/formulario_editar_curso_geral.png" alt="Seção geral do formulário de configuração de curso" class="img-responsive atto_image_button_middle" width="300" height="182"></p>
+              <p class="bookBodyImgLegenda">Figura 2. Seção geral do formulário de configuração de curso.</p> 
+    
 
-               <p>Na configuração <i>Visível</i>, você deverá determinar se o curso aparecerá ou não na lista de cursos.</p>
+               <p>Na configuração <i>Visibilidade do curso</i>, você deverá determinar se o curso aparecerá ou não na lista de cursos.</p>
 
-               <p>A partir dos planejamentos feitos, você deve ter uma data para o início do curso, assim selecione na próxima opção.</p>
-
-               <p>O “Número de identificação do curso”, nesta opção, o ID de um curso é 
-              usado apenas nos processos de comunicação com sistemas externos. Em caso
-               contrário, deixe o campo vazio.</p>
+               <p>A partir dos planejamentos feitos, você deve ter uma data para o início e término do curso, assim selecione-os nas próximas opções.</p>
             </div>
           </div>
         </div>
@@ -323,17 +317,17 @@
           </div>
           <div id="collapseTwoCurso" class="collapse" aria-labelledby="headingTwoCurso" data-parent="#accordion">
             <div class="card-body">
-              <p>Na seção Descrição pode ser informado o sumário do curso, veja Figura 2. O texto informado será exibido na lista de cursos.</p>
+              <p>Na seção Descrição pode ser informado o sumário do curso, veja Figura 3. O texto informado será exibido na lista de cursos.</p>
 
-              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-15-a-300x153.png" alt="seção descrição do formulário de criação de curso" class="img-responsive atto_image_button_text-bottom" width="300" height="153"></p>
-              <p class="bookBodyImgLegenda">Figura 2. Seção descrição do formulário de criação de curso.</p>
+              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-15-a-300x153.png" alt="seção descrição do formulário de configuração de curso" class="img-responsive atto_image_button_text-bottom" width="300" height="153"></p>
+              <p class="bookBodyImgLegenda">Figura 3. Seção descrição do formulário de configuração de curso.</p>
 
               <p>Podem ser anexados imagens e arquivos que complementem uma informação 
-              importante a cerca do curso, veja Figura 3. Os arquivos serão exibidos na lista de 
+              importante a cerca do curso, veja Figura 4. Os arquivos serão exibidos na lista de 
               cursos junto com o resumo. Caso o curso possua uma logo, a imagem deve ser anexada aqui.</p>
 
-              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-15-b-300x88.png" alt="Arquivos de resumo do curso do formulário de criação de curso" class="img-responsive atto_image_button_text-bottom" width="300" height="88"></p>
-              <p class="bookBodyImgLegenda">Figura 3. Arquivos de resumo do curso do formulário de criação de curso.</p>
+              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-15-b-300x88.png" alt="Arquivos de resumo do curso do formulário de configuração de curso" class="img-responsive atto_image_button_text-bottom" width="300" height="88"></p>
+              <p class="bookBodyImgLegenda">Figura 4. Arquivos de resumo do curso do formulário de configuração de curso.</p>
             </div>
           </div>
         </div>
@@ -347,16 +341,17 @@
           </div>
           <div id="collapseThreeCurso" class="collapse" aria-labelledby="headingThreeCurso" data-parent="#accordion">
             <div class="card-body">
-              <p>Nesta seção pode ser escolhido o formato de curso, Figura 4. Esta configuração determina o layout da página do curso.</p>
+              <p>Nesta seção pode ser escolhido o formato de curso, Figura 5. Esta configuração determina o layout da página do curso.</p>
               <ul>
-                <li><strong>Formato de atividade única</strong>: Para mostrar apenas uma atividade ou recurso (como um Quiz ou um pacote SCORM) na página do curso</li>
-                <li><strong>Formato social</strong>: Um fórum é mostrado na página do curso</li>
-                <li><strong>Formato tópicos</strong>: A página do curso é organizada em seções de tópicos</li>
-                <li><strong>Formato semanal</strong>: A página do curso é organizada em seções semanais, com a primeira semana começando na data de início do curso</li>
+                <li><strong>Formato de atividade única</strong>: Para mostrar apenas uma atividade ou recurso (como um Quiz ou um pacote SCORM) na página do curso;</li>
+                <li><strong>Formato social</strong>: Um fórum é mostrado na página do curso;</li>
+                <li><strong>Formato tópicos</strong>: A página do curso é organizada em seções de tópicos;</li>
+                <li><strong>Formato TabTopics</strong>: A página do curso é organizada em seções de abas;</li>
+                <li><strong>Formato semanal</strong>: A página do curso é organizada em seções semanais, com a primeira semana começando na data de início do curso.</li>
               </ul>
 
-              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-18-300x145.png" alt="seção formato do curso do formulário de criação de curso" class="img-responsive atto_image_button_middle" width="300" height="145"></p>
-              <p class="bookBodyImgLegenda">Figura 4. Seção formato do curso do formulário de criação de curso.</p>
+              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-18-300x145.png" alt="seção formato do curso do formulário de configuração de curso" class="img-responsive atto_image_button_middle" width="300" height="145"></p>
+              <p class="bookBodyImgLegenda">Figura 5. Seção formato do curso do formulário de configuração de curso.</p>
 
               <p>Na configuração <i>Seções escondidas</i>, a opção seções escondidas são mostradas contraídas” define que as seções aparecerão aos estudantes com a área das atividades contraída e com a cor da seção alterada. A seção é visualizada mas os conteúdos da seção ficam ocultos.</p>
 
@@ -376,8 +371,8 @@
           </div>
           <div id="collapse4Curso" class="collapse" aria-labelledby="heading4Curso" data-parent="#accordion">
             <div class="card-body">
-              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-22-300x185.png" alt="seção Aparência do formulário de criação de curso" class="img-responsive atto_image_button_text-bottom" width="300" height="185"></p>
-              <p class="bookBodyImgLegenda">Figura 5. Seção Aparência do formulário de criação de curso.</p>
+              <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-22-300x185.png" alt="seção Aparência do formulário de configuração de curso" class="img-responsive atto_image_button_text-bottom" width="300" height="185"></p>
+              <p class="bookBodyImgLegenda">Figura 6. Seção Aparência do formulário de configuração de curso.</p>
 
               <p>Esta configuração define o número de notícias recentes que serão 
               visualizadas na página principal do curso, no bloco “Últimas Notícias”.</p>
@@ -403,7 +398,7 @@
               <p>Estas opções definem o tamanho máximo dos documentos que os estudantes deste curso podem enviar ao servidor.</p>
 
               <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-26-300x74.png" alt="Moodle-26" class="img-responsive atto_image_button_text-bottom" width="300" height="74"></p>
-              <p class="bookBodyImgLegenda">Figura 6. Seção arquivos e uploads do formulário de criação de curso.</p>
+              <p class="bookBodyImgLegenda">Figura 7. Seção arquivos e uploads do formulário de configuração de curso.</p>
             </div>
           </div>
         </div>
@@ -418,9 +413,9 @@
           <div id="collapse5Curso" class="collapse" aria-labelledby="heading5Curso" data-parent="#accordion">
             <div class="card-body">
                 <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-28-300x117.png" alt="Moodle-28" class="img-responsive atto_image_button_text-bottom" width="300" height="117"></p>
-                <p class="bookBodyImgLegenda">Figura 7. Seção Acompanhamento de Conclusão do formulário de criação de curso.</p>
+                <p class="bookBodyImgLegenda">Figura 8. Seção Acompanhamento de Conclusão do formulário de configuração de curso.</p>
 
-                <p>Habilitando essa opção as condições de conclusão de atividades e conclusão de curso poderão ser configuradas.</p>
+                <p>Habilitando essa opção será possível acompanhar a conclusão de atividades por parte dos alunos e configurar as condições de conclusão do curso.</p>
             </div>
           </div>
         </div>
@@ -435,7 +430,7 @@
           <div id="collapse6Curso" class="collapse" aria-labelledby="heading6Curso" data-parent="#accordion">
             <div class="card-body">
               <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-30-300x160.png" alt="Moodle-30" class="img-responsive atto_image_button_text-bottom" width="300" height="160"></p>
-              <p class="bookBodyImgLegenda">Figura 7. Seção Grupos do formulário de criação de curso.</p>
+              <p class="bookBodyImgLegenda">Figura 9. Seção Grupos do formulário de configuração de curso.</p>
 
               <p>Esta configuração possui 3 opções:</p>
               <ul>
@@ -461,7 +456,7 @@
               <p>Esta configuração permite alterar os nomes dos papéis exibidos no curso. Apenas o nome exibido é alterado.</p>
 
               <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-33-254x300.png" alt="Moodle-33" class="img-responsive atto_image_button_text-bottom" width="300" height="354"></p>
-              <p class="bookBodyImgLegenda">Figura 7. Seção Renomear Papel do formulário de criação de curso.</p>
+              <p class="bookBodyImgLegenda">Figura 10. Seção Renomear Papel do formulário de configuração de curso.</p>
             </div>
           </div>
         </div>
@@ -476,7 +471,7 @@
           <div id="collapse8Curso" class="collapse" aria-labelledby="heading8Curso" data-parent="#accordion">
             <div class="card-body">
               <p class="bookBodyImg"><img src="https://blog.raleduc.com.br/wp-content/uploads/2016/07/Moodle-34-300x62.png" alt="Moodle-34" class="img-responsive atto_image_button_text-bottom" width="300" height="62"></p>
-              <p class="bookBodyImgLegenda">Figura 7. Seção Marcadores do formulário de criação de curso.</p>
+              <p class="bookBodyImgLegenda">Figura 11. Seção Marcadores do formulário de configuração de curso.</p>
             </div>
           </div>
         </div>
@@ -488,14 +483,14 @@
     <div class="bookFooterRight bookBackground2">
     <p class="bookFooterLink">ava.ufpe.br/nead</p>
     </div>
-    -->
+  
 
     <br/><br/><br/><br/>
-    <h1>Modificando os <i>layouts</i> dos cursos​</h1>
+    <h1>Modificando o <i>layout</i> dos cursos​</h1>
     <div class="bookHeader bookBackground2">.</div>
     <div class="bookBody">
       <p>Um curso Moodle pode ser apresentado de formas muito diferentes a depender do tema e formato de curso utilizado (<i>layout</i>). Abaixo temos uma página de curso em branco usando o tema básico padrão do Moodle e Formato Semanal:</p>
-      <p class="bookBodyImg"><img src="/imgs/module6/pagina_curso.png" alt="" role="presentation" class="img-responsive" width="610" height="318"></p>
+      <p class="bookBodyImg"><img src="./imgs/modulo6/pagina_curso.png" alt="" role="presentation" class="img-responsive" width="610" height="318"></p>
 
       <ol>
         <li>Bloco Navegação<br>Normalmente visível em todas as páginas, este bloco ajuda a encontrar o seu caminho em torno do curso e site.</li>
@@ -524,7 +519,7 @@
 
       <p>É ideal para uso se o curso for baseado em objetivos, onde cada objetivo pode ter diferentes tempos para conclusão.</p>
 
-      <p class="bookBodyImg"><img src="FT%C3%B3picos.png" alt="" role="presentation" class="img-responsive" width="466" height="376"></p>
+      <p class="bookBodyImg"><img src="./imgs/modulo6/formato_tabtopics.png" alt="" role="presentation" class="img-responsive" width="466" height="376"></p>
 
       <h4>Formato semanal</h4>
 
@@ -534,7 +529,7 @@
 
       <p>Certifique-se de que a sua data de início do curso está correta. Caso contrário as datas de suas semanas apresentarão datas incorretas.</p>
 
-      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/620456945/2/Semanal.png" alt="" role="presentation" class="img-responsive" width="461" height="310"></p>
+      <p class="bookBodyImg"><img src="./imgs/modulo6/formato_semanal.png" alt="" role="presentation" class="img-responsive" width="461" height="310"></p>
 
       <h4>Formato TabTopics</h4>
 
