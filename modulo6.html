@@ -581,7 +581,7 @@
       <p>Para realizar qualquer tipo de edição na sala virtual, antes de tudo, é necessário clicar no botão: <span class="btn btn-success" title="Ativar edição"><span aria-hidden="true" class="fa-fw fa fa-edit"></span>Ativar edição</span> localizado na parte superior direita da página ou no ícone <span aria-hidden="true" class="fa-fw fa fa-edit"></span> localizado no menu ao lado do ícone de editar configurações.</p>
        <p>Ao ativar a edição, você visualiza os ícones que possibilitam a edição da sala virtual, vide exemplo na Figura 1.</p>
 
-       <p class="bookBodyImg"><img src="./imgs/modulo6/icones_edicao.png" alt="Sala Virtual em modo de edição" role="presentation" class="img-responsive" width="461" height="310"></p>
+      <p class="bookBodyImg"><img src="./imgs/modulo6/opcoes_edicao.png" alt="Sala Virtual em modo de edição" role="presentation" class="img-responsive" width="461" height="310"></p>
       <p class="bookBodyImgLegenda">Figura 1. Sala Virtual em modo de edição.</p>
 
       <p>Abaixo estão listados os principais ícones/botões de edição, clique no tópico para exibir o texto.</p>
@@ -590,59 +590,46 @@
         <div class="card">
           <div class="card-header" id="headingIconesEdicao1">
             <h5 class="mb-0">
-              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao1" aria-expanded="false" aria-controls="collapseIconesEdicao1">
-                Mover item
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao1" aria-expanded="false" aria-controls="collapseIconesEdicao1"> <span aria-hidden="true" class="fa-fw fa fa-arrows"></span>, <span aria-hidden="true" class="fa-fw fa fa-arrow-right"></span>, <span aria-hidden="true" class="fa-fw fa fa-arrow-left"></span>Mover item
               </button>
             </h5>
           </div>
           <div id="collapseIconesEdicao1" class="collapse" aria-labelledby="headingIconesEdicao1" data-parent="#accordion">
             <div class="card-body">
-              <p>Para mover qualquer item, sejam recursos, atividades ou módulos na página da disciplina, você deve clicar nas setas indicadoras que aparecem junto a cada um deles – para cima, para baixo, para direita ou esquerda. No caso dos recursos e atividades inseridos na área de programação da disciplina, as setas de movimentação para a direita e para a esquerda efetuam o deslocamento horizontal do item (aumentar ou diminuir o recuo), no módulo em que se encontram. As setas de movimentação vertical efetuam o deslocamento do item para outra linha.</p>
-              <p>Para promover o deslocamento do item para outra linha, mesmo que situada em outro tópico, clique (segure o clique) sobre o ícone e arraste para a posição desejada. As setas de movimentação para direita e esquerda permanecem para o deslocamento dos itens no sentido horizontal.</p>     
+              <p>Para mover qualquer item, sejam recursos, atividades ou seções na sala virtual, deve-se clicar nas setas indicadoras que aparecem junto a cada um deles – <span aria-hidden="true" class="fa-fw fa fa-arrows"></span> seta cruz, <span aria-hidden="true" class="fa-fw fa fa-arrow-right"></span> para direita ou <span aria-hidden="true" class="fa-fw fa fa-arrow-left"></span> para esquerda. </p>
+              <p><strong>Deslocamento horizontal</strong>: As setas de movimentação para a direita <span aria-hidden="true" class="fa-fw fa fa-arrow-right"></span> e para a esquerda <span aria-hidden="true" class="fa-fw fa fa-arrow-left"></span> efetuam o deslocamento horizontal (aumentar ou diminuir o recuo) dos recursos e atividades da sala virtual. </p>
+              <p><strong>Deslocamento Vertical</strong>: As setas cruzes <span aria-hidden="true" class="fa-fw fa fa-arrows"></span> efetuam o deslocamento do item para outra linha ou seção da sala virtual. Para promover o deslocamento do item para outra linha, mesmo que situada em outra seção, clique (segure o clique) sobre o ícone e arraste para a posição desejada.</p> 
             </div>
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-header" id="headingIconesEdicao7">
+            <h5 class="mb-0">
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao7" aria-expanded="false" aria-controls="collapseIconesEdicao7">
+                <span aria-hidden="true" class="fa-fw fa fa-pencil"></span>Renomear
+              </button>
+            </h5>
+          </div>
+          <div id="collapseIconesEdicao7" class="collapse" aria-labelledby="headingIconesEdicao7" data-parent="#accordion">
+            <div class="card-body">
+              Funcionalidade utilizada para renomear o título do item ao qual ela está relacionada. Este elemento pode ser uma seção, um recurso ou uma atividade. É uma maneira mais ágil para editar o título do item sem ter que acessar o formulário de edição de configurações (ver tópico <span aria-hidden="true" class="fa-fw fa fa-cog"></span>Editar configurações). Pressione a tecla '<i>Enter</i>' para salvar a edição ou pressione a tecla '<i>Esc</i>' para cancelar.
+            </div>
+          </div>
+        </div>
+
         <div class="card">
           <div class="card-header" id="headingIconesEdicao2">
             <h5 class="mb-0">
-              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao1" aria-expanded="false" aria-controls="collapseIconesEdicao2">
-                Atualizar
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao2" aria-expanded="false" aria-controls="collapseIconesEdicao2">
+                <span aria-hidden="true" class="fa-fw fa fa-cog"></span>Editar configurações
               </button>
             </h5>
           </div>
           <div id="collapseIconesEdicao2" class="collapse" aria-labelledby="headingIconesEdicao2" data-parent="#accordion">
             <div class="card-body">
-              Funcionalidade utilizada para atualizar (editar) as configuraçõe s do elemento ao qual ela está relacionada. Este elemento pode ser um sumário, um rótulo, uma atividade, um módulo ou um material. Esta função pode ser representada também somente por um “lápis”, o que depende do tema (layout) configurado para o ambiente virtual. A função de edição de item também é disponibilizada diretamente na atividade, no bloco de configuração de cada atividade, quando acessada pelo professor, conforme veremos adiante.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingIconesEdicao6">
-            <h5 class="mb-0">
-              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao6" aria-expanded="false" aria-controls="collapseIconesEdicao6">
-                Duplicar
-              </button>
-            </h5>
-          </div>
-          <div id="collapseIconesEdicao6" class="collapse" aria-labelledby="headingIconesEdicao6" data-parent="#accordion">
-            <div class="card-body">
-              funcionalidade utilizada para duplicar atividades e recursos. Permanecem as mesmas co nfigurações da ferramenta duplicada, mas, no caso de atividades, sem dados de alunos. Quando um item é duplicado , sempre é possível editar a nova cópia .
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingIconesEdicao3">
-            <h5 class="mb-0">
-              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao3" aria-expanded="false" aria-controls="collapseIconesEdicao3">
-                Excluir
-              </button>
-            </h5>
-          </div>
-          <div id="collapseIconesEdicao3" class="collapse" aria-labelledby="headingIconesEdicao3" data-parent="#accordion">
-            <div class="card-body">
-              utilizado pa r a excluir atividade s, recursos, b locos , entre outros . Não existe a operação de desfazer , ou seja, depois que um elemento é excluído , para que el e volte a aparecer, ele deve ser incluído e configurado novamente
+              Por meio desta opção é possível acessar o formulário com todas as configurações do elemento ao qual o ícone está relacionado, tais como Nome (título), Descrição, Disponibilidade, Restringir Acesso, Acompanhamento de Conclusão, etc. Os campos disponíveis no formulário para configuração irá depender do elemento a ser editado.
+              <p>Os campos de todos os formulários do AVA possuem um ícone de Ajuda <span aria-hidden="true" class="fa-fw fa fa-question-circle"></span> que serve para auxiliar os usuários na configuração deste campo. Caso tenha alguma dúvida sobre a configuração de um campo do formulário, clique nesse ícone para ler informações adicionais.</p>
             </div>
           </div>
         </div>
@@ -651,94 +638,105 @@
           <div class="card-header" id="headingIconesEdicao4">
             <h5 class="mb-0">
               <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao4" aria-expanded="false" aria-controls="collapseIconesEdicao4">
-                Mostrar ou ocultar item
+                <span aria-hidden="true" class="fa-fw fa fa-eye"></span>Mostrar ou <span aria-hidden="true" class="fa-fw fa fa-eye-slash"></span>Ocultar item
               </button>
             </h5>
           </div>
           <div id="collapseIconesEdicao4" class="collapse" aria-labelledby="headingIconesEdicao4" data-parent="#accordion">
             <div class="card-body">
-                funcionalidade de configuração que permite ocultar (ao clicar sobre ele, o olho fecha) ou tornar visível (ao clicar sobre ele, o olho fica aberto) qualqu er atividade , recurso , bloco ou tópico de programação aos alunos , ou a um determinado grupo de alunos. 
+                Configuração que permite ocultar (ao clicar sobre ele, o olho fecha) ou tornar visível (ao clicar sobre ele, o olho fica aberto) qualquer item da sala virtual. 
+                <p>Opção bastante útil quando o professor estiver criando atividades e não deseja que o aluno a visualize enquanto ainda não estiver concluída.</p>
             </div>
           </div>
         </div>
 
         <div class="card">
+          <div class="card-header" id="headingIconesEdicao6">
+            <h5 class="mb-0">
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao6" aria-expanded="false" aria-controls="collapseIconesEdicao6">
+                <span aria-hidden="true" class="fa-fw fa fa-copy"></span> Duplicar
+              </button>
+            </h5>
+          </div>
+          <div id="collapseIconesEdicao6" class="collapse" aria-labelledby="headingIconesEdicao6" data-parent="#accordion">
+            <div class="card-body">
+              Permite duplicar atividades e recursos. As mesmas configurações do item duplicado serão mantidas, mas, no caso de atividades, sem dados de alunos. Quando um item é duplicado, sempre é possível editar a nova cópia.
+            </div>
+          </div>
+        </div>     
+
+        <div class="card">
           <div class="card-header" id="headingIconesEdicao5">
             <h5 class="mb-0">
               <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao5" aria-expanded="false" aria-controls="collapseIconesEdicao5">
-                Tipo de grupo
+                 <span aria-hidden="true" class="fa-fw fa fa-user-circle"></span>Atribuir papéis
               </button>
             </h5>
           </div>
           <div id="collapseIconesEdicao5" class="collapse" aria-labelledby="headingIconesEdicao5" data-parent="#accordion">
             <div class="card-body">
-              funcionalidade disponibilizada somente na área de programação d o curso/ disciplina, que sinaliza quando a atividade inserid a está configurada para grupos , seja separados (grupo, indicando dois personagens, sendo que um está esmaecido), ou visíveis (grupo, indicando dois personagens); ou nenhum grupo (individual, indicando um personagem) ; se você clicar sobre o ícone, é possíve l mudar a configuração de grupos.
+              Designar um papel a um usuário em um determinado contexto, significa dar as permissões que configuram este papel neste contexto específico. Por exemplo, se a um aluno for atribuído o papel de professor em uma determinada atividade, ele terá as permissões de professor para esta atividade especfífica. Esta configuração deve ser utilizada com cautela. 
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingIconesEdicao8">
+            <h5 class="mb-0">
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao8" aria-expanded="false" aria-controls="collapseIconesEdicao8">
+                <span aria-hidden="true" class="fa-fw fa fa-circle-o"></span>Realçar ou <span aria-hidden="true" class="fa-fw fa fa-circle"></span> Remover realce 
+              </button>
+            </h5>
+          </div>
+          <div id="collapseIconesEdicao8" class="collapse" aria-labelledby="headingIconesEdicao8" data-parent="#accordion">
+            <div class="card-body">
+              Utilizado para destacar uma seção específica na sala virtual. Bastante útil para destacar a seção corrente. Por exemplo, a sala virtual possui dez seções (módulos ou unidades) e deseja-se destacar a seção quatro para facilitar a sua visualização por parte dos alunos.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingIconesEdicao9">
+            <h5 class="mb-0">
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao9" aria-expanded="false" aria-controls="collapseIconesEdicao9">
+                <span aria-hidden="true" class="fa-fw fa fa-plus"></span>Aumentar ou <span aria-hidden="true" class="fa-fw fa fa-minus"></span> Diminuir o número de seções 
+              </button>
+            </h5>
+          </div>
+          <div id="collapseIconesEdicao9" class="collapse" aria-labelledby="headingIconesEdicao9" data-parent="#accordion">
+            <div class="card-body">
+              Conforme o nome do ícone sugere, é utilizado para adicionar ou remover seções na sala virtual. Esta funcionalidade também pode ser acessada via formulário de edição de configurações (ver tópico <span aria-hidden="true" class="fa-fw fa fa-cog"></span>Editar configurações).
+              <p><strong>Atenção!</strong><br/>Caso seja acionado o ícone <span aria-hidden="true" class="fa-fw fa fa-minus"></span> para diminuir o número de seções e a última seção possuir atividades ou recursos, estes itens serão realocados numa seção <i>Atividades órfãs</i>, está seção é permanetemente oculta. Assim que todo o seu conteúdo for movido para outra seção, ela poderá ser apagada.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingIconesEdicao3">
+            <h5 class="mb-0">
+              <button class="btn btn-link bookCollapseButton bookColorSeta2" data-toggle="collapse" data-target="#collapseIconesEdicao3" aria-expanded="false" aria-controls="collapseIconesEdicao3">
+                <span aria-hidden="true" class="fa-fw fa fa-trash"></span>Excluir
+              </button>
+            </h5>
+          </div>
+          <div id="collapseIconesEdicao3" class="collapse" aria-labelledby="headingIconesEdicao3" data-parent="#accordion">
+            <div class="card-body">
+              Utilizado para excluir itens da página da sala virtual.
+              <p><strong>Cuidado!</strong> <br/>Não existe a operação de desfazer, ou seja, depois que um elemento é excluído, para que ele volte a aparecer, ele deve ser adicionado e configurado novamente.</p>
+              <p>Caso queira deixar o item invisível aos alunos, sem excluí-lo, utilize as opções <span aria-hidden="true" class="fa-fw fa fa-eye"></span>Mostrar ou <span aria-hidden="true" class="fa-fw fa fa-eye-slash"></span>Ocultar item, descritas no tópico abaixo.</p>
             </div>
           </div>
         </div>
       </div>
-
-      <p class="bookBodyImg"><img src="./imgs/modulo6/ativar_edicao_icones.png" alt="Ícones de edição" role="presentation" class="img-responsive" width="461" height="310"></p>
-      <p class="bookBodyImgLegenda">Figura 2. Ícones de edição.</p>
-
-     
-      <h4>Editando seções/tópicos</h4>
-
-     
-
-
-Depois de clicar em "Ativar edição", localize a seção que deseja editar e clique no link (à sua direita) "Editar" &gt; "Editar seção". No exemplo acima será utilizado o primeiro link "Editar", que representa a seção 0, ou seção principal do curso, aquele que fica posicionado antes de começar a sequência de tópicos (1,2,3...). A seguintes opções podem ser configuradas:</p>
-
-       <p><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/729045222/EditarSecao.png" alt="" role="presentation" style="vertical-align:text-bottom; margin: 0 .5em;" class="img-responsive" width="501" height="426"><br></p>
-
-      <ul><li>Nome da seção:</li><li>Sumário:</li><li>Restringir acesso:<br></li></ul>
-
-      <p>Para editar uma seção específica, perceba que (com a opção "Ativar edição" habilitada) na mesma linha onde é exibido o título de uma seção, à sua direita, estará disponível um link "Editar" correspondente àquela seção. No exemplo acima, em "Tópico 1", perceba o link editar à sua direita</p>
-
-      <p><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/729045222/EditTopico.png" alt="" role="presentation" style="vertical-align:text-bottom; margin: 0 .5em;" class="img-responsive" width="501" height="103"></p>
-
-      <p>Para trocar a posição das seções, basta posicionar o mouse em cima do ícone à esquerda do título do tópico (no exemplo, Tópico 1) pressionar o botão esquerdo do mouse, segurando-o, e arrastar o tópico para cima ou para baixo, e soltar o botão quando chegar à posição desejada.<br></p>
-
-      <p><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/729045222/movertopico.png" alt="" role="presentation" style="vertical-align:text-bottom; margin: 0 .5em;" class="img-responsive" width="300" height="94"><br></p>
-
-      <p>Ao ativar a edição, você visualizará os ícones que possibilitam a edição de recursos e atividades
-
-      Depois de clicar em "Ativar edição", localize a seção que deseja editar e clique no link (à sua direita) "Editar" &gt; "Editar seção". No exemplo acima será utilizado o primeiro link "Editar", que representa a seção 0, ou seção principal do curso, aquele que fica posicionado antes de começar a sequência de tópicos (1,2,3...). A seguintes opções podem ser configuradas:</p>
-
-      <ul>
-        <li>Nome da seção;</li>
-        <li>Sumário;</li>
-        <li>Restringir acesso.</li>
-      </ul>
-
-      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/377422640/3/EditarSecao.png" alt="" role="presentation" class="img-responsive" width="501" height="426"></p>
-
-      <p>Para editar uma seção específica, perceba que (com a opção "Ativar edição" habilitada) na mesma linha onde é exibido o título de uma seção, à sua direita, estará disponível um link "Editar" correspondente àquela seção. No exemplo acima, em "Tópico 1", perceba o link editar à sua direita</p>
-
-      <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/377422640/3/EditTopico.png" alt="" role="presentation" class="img-responsive" width="501" height="103"></p>
-
-      <p>Para trocar a posição das seções, basta posicionar o mouse em cima do ícone à esquerda do título do tópico (no exemplo, Tópico 1) pressionar o botão esquerdo do mouse, segurando-o, e arrastar o tópico para cima ou para baixo, e soltar o botão quando chegar à posição desejada.<br></p>
-
+    
       <p class="bookBodyImg"><img src="https://ava.ufpe.br/nead/draftfile.php/10525/user/draft/377422640/3/movertopico.png" alt="" role="presentation" class="img-responsive" width="300" height="94"></p>
     </div>
     <div class="bookFooterLeft bookBackground2"></div>
     <div class="bookFooterRight bookBackground2">
     <p class="bookFooterLink">ava.ufpe.br/nead</p>
     </div>
-
-    <br/><br/><br/><br/>
-    <h1>Botões e Ícones</h1>
-    <div class="bookHeader bookBackground2">.</div>
-    <div class="bookBody">
-      <p>Abaixo estão listados os principais ícones de botões/opções que estarão presentes em várias partes do Moodle:</p>
-
-      <p class="bookBodyImg"><img src="https://lh4.googleusercontent.com/aomPlY-vEG_EwxNY7JFUlP49L5yu52gow75YAQwPCloFiW9_rB7hyASdWLeWwFPB-T4U8y-vNDYRvym4YhyId7TW4Ey0XpevKg997q67VAh3yoVmHEM4OP2BN4lh_OV9VOZ02PRjSaI" alt="" role="presentation" style="" width="500" height="170"></p>
-    </div>
-    <div class="bookFooterLeft bookBackground2"></div>
-    <div class="bookFooterRight bookBackground2">
-    <p class="bookFooterLink">ava.ufpe.br/nead</p>
-    </div>
-
+    
     <br/><br/><br/><br/>
     <h1>Ferramenta de edição de texto</h1>
     <div class="bookHeader bookBackground2">.</div>
